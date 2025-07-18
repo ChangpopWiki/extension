@@ -1,0 +1,37 @@
+{
+    "name": "Changpopwiki",
+    "version": "1.0.0",
+	"author": "ChangpopWiki Maintainer",
+	"url": "https://github.com/ChangpopWiki/extension",
+	"namemsg": "changpopwiki-name",
+    "descriptionmsg": "changpopwiki-desc",
+    "license-name": "MIT",
+    "type": "specialpage",
+	"SpecialPages": {
+		"LyricOnlyPages": {
+			"class": "SpecialLyricOnlyPages"
+		}
+	},
+    "MessagesDirs": {
+		"Changpopwiki": [
+            "i18n"
+        ]
+    },
+	"ExtensionMessagesFiles": {
+		"ChangpopwikiAlias": "Changpopwiki.alias.php"
+	},
+    "AutoloadClasses": {
+		"SpecialLyricOnlyPages": "includes/SpecialLyricOnlyPages.php",
+		"Hooks": "includes/Hooks.php"
+    },
+	"HookHandlers": {
+		"main": {
+			"class": "Hooks",
+			"services": [ "UserNameUtils" ]
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "main"
+	},
+    "manifest_version": 2
+}

@@ -1,0 +1,10 @@
+{
+	"changpopwiki-name": "창팝위키",
+    "changpopwiki-desc": "창팝위키 전용 확장",
+	"changpopwiki-lyriconly-desc": "가사만 있는 문서 목록",
+	"changpopwiki-lyric-page": "가사 문서",
+	"changpopwiki-page-size": "크기",
+	"changpopwiki-last-modified": "마지막 수정",
+	"changpopwiki-corresponding-main": "본 문서",
+	"changpopwiki-lyricpage-tomain": "본 문서: $1"
+}
